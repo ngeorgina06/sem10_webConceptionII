@@ -63,6 +63,7 @@ previos element sibling (frere/soeur bouton = img)
 this(bouton cliqué)
 creer virtuellement balise image
 
+méthode inner text
 faire la meme chose pour le paragraphe
 récpérer l'attribut alt
 créer un p avec l'alt comme texte
@@ -74,3 +75,5 @@ enlever les balises
 enlever classe visible
 
 ##### vérifier code avec console.log toutes les étapes
+
+Laboratoire 6 a les consignes (différence: inner text sur le paragraphe)
