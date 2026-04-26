@@ -36,7 +36,7 @@ a {
     text-decoration: none;
 }
 
-button {
+button .bouton {
     font:
         bold 1.125rem "Jost",
         sans-serif;
@@ -59,20 +59,27 @@ button {
 h1 {
     color: #ffffff;
     font:
-        bold 3rem/110% "Raleway",
+        bold 3.3.125/110% "Jost",
         sans-serif;
     font-optical-sizing: auto;
 
-    margin-bottom: 20px;
+    margin: 0;
 }
 
 h2 {
-    color: #d300b7;
+    color: #000;
 
     font:
-        bold 2rem/110% "Raleway",
+        bold 2.25rem/110% "Jost",
         sans-serif;
-    font-optical-sizing: auto;
+}
+
+h3 {
+    color: #E25254;
+
+    font:
+        bold 1.375rem/110% "Jost",
+        sans-serif;
 }
 
 /*------------------------------------------------------------------------------
@@ -83,7 +90,7 @@ h2 {
 
 .header {
     font:
-        bold 1.125rem "Raleway",
+        bold 1.125rem "Jost",
         sans-serif;
     color: #000;
 
@@ -94,32 +101,33 @@ h2 {
     background-color: #fff;
     background-size: cover;
 
-    position: fixed;
-    top: 10px;
-    left: 135px;
-    z-index: 3;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    position: fixed;
+    z-index: 3;
 }
 
 .logo {
     color: inherit;
 
-    font-weight: 900;
-    font-size: 1.75rem;
+    font-weight: bold;
+    font-size: 2.625rem;
+
+    margin: 0;
 }
 
-.menu {
+.menu ul {
     list-style-type: none;
 
     display: flex;
-    gap: 40px;
+    align-items: center;
+    gap: 30px;
 }
 
-.main a:hover {
-    color: #d300b7;
+.menu a:hover {
+    color: #E25254;
 }
 
 /* HERO */
