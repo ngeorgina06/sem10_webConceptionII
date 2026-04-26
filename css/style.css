@@ -1,0 +1,274 @@
+/*----------------------------------------------------------------------------
+    Éléments Génériques
+----------------------------------------------------------------------------*/
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/*------------------------------------------------------------------------------
+    Base
+------------------------------------------------------------------------------*/
+
+body {
+  font:
+    1.125rem/160% "Roboto",
+    sans-serif;
+  font-optical-sizing: auto;
+
+  color: #000000;
+}
+
+.wrapper {
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+button {
+  font:
+    bold 1.125rem "Raleway",
+    sans-serif;
+
+  background-color: transparent;
+  border: 4px solid #d300b7;
+
+  line-height: 100%;
+  border-radius: 50vh;
+
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #d300b7;
+  color: #ffffff;
+}
+
+/*------------------------------------------------------------------------------
+   Typographie
+------------------------------------------------------------------------------*/
+
+h1 {
+  color: #ffffff;
+  font:
+    bold 3rem/110% "Raleway",
+    sans-serif;
+  font-optical-sizing: auto;
+
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #d300b7;
+
+  font:
+    bold 2rem/110% "Raleway",
+    sans-serif;
+  font-optical-sizing: auto;
+}
+
+/*------------------------------------------------------------------------------
+   Sections
+------------------------------------------------------------------------------*/
+
+/* HEADER */
+
+.header {
+  font:
+    bold 1.125rem "Raleway",
+    sans-serif;
+  color: #000;
+
+  position: relative;
+}
+
+.header .wrapper {
+  background-color: #fff;
+  background-size: cover;
+
+  position: fixed;
+  top: 10px;
+  left: 135px;
+  z-index: 3;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: inherit;
+
+  font-weight: 900;
+  font-size: 1.75rem;
+}
+
+.menu {
+  list-style-type: none;
+
+  display: flex;
+  gap: 40px;
+}
+
+.main a:hover {
+  color: #d300b7;
+}
+
+/* HERO */
+
+.hero {
+  min-height: 650px;
+  background: url("../images/hero.jpg") no-repeat top center/cover;
+}
+
+/* CONTENU PRINCIPAL */
+
+.contenu {
+  background-color: #222;
+}
+
+.contenu .wrapper {
+  text-align: center;
+
+  padding: 100px 0px;
+}
+
+.texte p {
+  color: #fff;
+
+  margin-bottom: 80px;
+}
+
+.conteneur-offres {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: #ffffff;
+
+  padding: 20px;
+}
+
+.btn-plus {
+  color: #d300b7;
+
+  justify-self: flex-end;
+
+  padding: 12px 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.coin {
+  position: absolute;
+  bottom: -360px;
+  right: 120px;
+  z-index: 2;
+}
+
+.acrobatique {
+  position: relative;
+}
+
+/* MODAL */
+
+text.zoom {
+  font:
+    bold 1.125rem/160% "Raleway",
+    sans-serif;
+  font-optical-sizing: auto;
+
+  color: #000;
+
+  max-height: 80%;
+
+  background-color: #ffffff;
+
+  padding: 30px;
+
+  border-radius: 10px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 3;
+
+  background-color: rgba(0, 0, 0, 0.8);
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  padding: 30px;
+
+  cursor: pointer;
+}
+
+.modal.visible {
+  display: flex;
+}
+
+/* FOOTER */
+
+.footer {
+  text-align: center;
+}
+
+.categories ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 20px;
+
+  list-style-type: none;
+}
+
+#rond {
+  font-size: 50px;
+  font-weight: bold;
+
+  background-color: #d300b7;
+  color: #fff;
+
+  width: 90px;
+  height: 90px;
+  border-radius: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+#rond:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.droits {
+  margin-bottom: 60px;
+}
