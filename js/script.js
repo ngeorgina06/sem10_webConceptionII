@@ -1,4 +1,4 @@
-const buttons = document.querySelectorAll('.btn-plus');
+const buttons = document.querySelectorAll('.bouton');
 
 const modal = document.querySelector(".modal");
 
@@ -11,7 +11,7 @@ for (let i = 0; i < buttons.length; i++) {
 function openModal() {
     const path = this.previousElementSibling.src;
     const text = document.createElement("textContent");
-    text.textContent = "modal";
+    text.textContent = "FIN";
     text.classList.add('zoom');
 
     modal.appendChild(text);
